@@ -8,10 +8,8 @@ for (let i=0; i < SQUARES_NUMBER; i++) {
   const square = document.createElement('div'); //создаем квадраты и кладем их в board
   square.classList.add('square'); //присваиваем класс квадрату
   
-  square.addEventListener('mouseover', setColor);//сокращенный вариант функции setColor()
-
-  square.addEventListener('mouseleave', removeColor);//сокращенный вариант функции removeColor()
-
+  square.addEventListener('mouseover', setColor);
+  square.addEventListener('mouseleave', removeColor);
   board.append(square);
 }
 
